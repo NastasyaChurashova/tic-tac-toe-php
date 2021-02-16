@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/tic-tac-toe-php/
+RewriteRule (.*) /tic-tac-toe-php/$1 [L]
