@@ -86,7 +86,19 @@ for ($r = 0; $r < 3; $r++) {
 ?>
 */
 
-
+/* #8 task
+for ($r = 0; $r < 3; $r++) {
+    for ($c = 0; $c < 3; $c++) {
+        if ($c === 0){
+            $entries[$r][$c] = 'x';
+        }
+        if ($r===1){
+            $entries[$r][$c] = 'm';
+        }
+    }
+}
+?>
+*/
 
 <?php output($entries);?>
 <pre><?=print_r($entries, true)?></pre>
