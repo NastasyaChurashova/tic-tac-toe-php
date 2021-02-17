@@ -11,9 +11,10 @@
 
 .container a {
   border: 1px solid black;
-  text-align:center;
+  text-align: center;
   font-size: 50px;
   text-decoration: none;
   color: #000;
+  vertical-align: middle;
 }
 
