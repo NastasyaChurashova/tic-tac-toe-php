@@ -100,6 +100,33 @@ for ($r = 0; $r < 3; $r++) {
 ?>
 */
 
+/*almost 9
+for ($r = 0; $r < 3; $r++){
+     for ($c = 0; $c < 3; $c++){
+         if ($c !=1 && $c==2) {
+            $entries[$r][$c] = ($r+1)*2-1;  
+                   
+        }
+        elseif ($c !=1 && $c==0){
+            $entries[$r][$c] = ($r+1)*2;
+        }
+
+    }
+  }
+?>
+*/
+$i=1;
+for ($r = 2; $r >= 0; $r--){
+    for ($c = 2; $c >= 0; $c--){
+        if ($c !=1){
+           $entries[$r][$c] = $i++;  
+    }
+   
+   }
+ }
+?>
+
+
 <?php output($entries);?>
 <pre><?=print_r($entries, true)?></pre>
 <?php function output($entries) { ?>
