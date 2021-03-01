@@ -1,0 +1,30 @@
+
+Example #1
+|x|x|x|
+|x|x|x|
+|x|x|x|
+
+Example #2
+|0|x|x|
+|0|x|x|
+|0|x|x|
+
+Example #3
+|0|0|0|
+|0|x|0|
+|0|0|0|
+
+Example #4
+|x|0|x|
+|x|0|x|
+|x|0|x|
+
+Example #5
+|x|x|x|
+|x|x|0|
+|x|x|0|
+
+Example #6
+|x|x|x|
+|x|0|0|
+|x|0|0|

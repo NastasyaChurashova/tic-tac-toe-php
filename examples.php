@@ -1,3 +1,8 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
 
 <link rel="stylesheet" href="style.css">
 <?php
@@ -144,9 +149,6 @@ for ($r = 2; $r >= 0; $r--){
      }
  }
 ?>
-*/
-
-
 
 <?php output($entries);?>
 <pre><?=print_r($entries, true)?></pre>
@@ -161,3 +163,44 @@ for ($r = 2; $r >= 0; $r--){
         <?php endfor;?>
     </table>
 <?php } ?>
+
+*/
+
+
+function isValueInt($value) {
+    if ((int) $value) {
+        return true;
+    }
+    return false;
+}
+
+$n = 0;
+$m = 0;
+$A['n'] = $n;
+$A['m'] = $m;
+
+$Quantity_Elements = count($A);
+
+$A = [0, 2, 7, 5, 10];
+
+function checkTwoNumbers ($Quantity_Elements, $A) {
+
+    while (
+        array_key_exists('n', $A) &&
+        array_key_exists('m', $A) &&
+        
+        isset($n) && isset($m)  &&
+        $n != $m &&
+        isValueInt($n) && isValueInt($m)) {
+ 
+    if  (($n - $m) === 5 && ($m -$n) == $Quantity_Elements && $n++ && $m++){
+        echo $A['n'] . " - " . $A['m'];
+        $n=$m+1;
+        return true;
+    }
+
+    return false;
+    }
+}
+?>
+
